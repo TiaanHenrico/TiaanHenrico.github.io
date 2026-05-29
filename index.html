@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tiaan Henrico - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1>Tiaan Henrico</h1>
+        <p class="tagline">University Portfolio</p>
+        <a class="cv-link" href="./Tiaan_Henrico_CV.docx" download="Tiaan_Henrico_CV.docx">Download CV</a>
+      </div>
+    </header>
+
+    <svg class="background-svg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;">
+      <defs>
+        <pattern id="bgImage" x="0" y="0" width="1400" height="900" patternUnits="userSpaceOnUse">
+          <image href="portfolio-background.png" x="0" y="0" width="1400" height="900"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#bgImage)"/>
+    </svg>
+
+    <!-- Dynamic connecting curves -->
+    <svg id="curvesSvg" class="curves-svg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;">
+      <g id="pathsGroup"></g>
+    </svg>
+
+    <main class="layout">
+      
+      <section class="timeline-content">
+        <section id="about" class="panel">
+          <h2>About Me</h2>
+          <p class="lead">I am a motivated honours BSc Geoinformatics student at Stellenbosch University with a strong academic 
+            performance, practical GIS experience and an interest in remote sensing, spatial analysis and geospatial 
+            research. I have experience not just in various GIS software and programming languages, but also in 
+            data management and analysis and working in a team environment. I like learning new things about almost anything.</p>
+          <ul>
+            <li><strong>Location:</strong> Stellenbosch, Western Cape</li>
+            <li><strong>Contact emails:</strong> 25872230@sun.ac.za, tiaanhenrico@gmail.com</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tiaan-henrico-253a22285/" target="_blank" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold)">View Profile</a></li>
+            <li><strong>ORCID:</strong> 0009-0003-0817-4005</li>
+            <li><strong>Interests:</strong> Remote sensing, temporal analysis, spatial data visualisation, history, movies, 
+              gyming</li>
+          </ul>
+        </section>
+
+        <section id="year1" class="panel">
+          <h2>First Year (2022 - 2023)</h2>
+          <ul>
+            <li>Completed an introductory course in QGIS (2022) and did Engineering for 3 months (2022)</li>
+            <li>Enrolled in undergraduate BSc in Geoinformatics (2023-2025)</li>
+            <li>Core modules and foundations of academic career: Geographical Information Technology, Organisational Informatics</li>
+            <li>The first year of my geoinformatics degree served as a good base for the rest of my academic career, as I gained experience in physics, 
+              maths and computer science. I also gained a better understanding of the basics of geography and geoinformatics.</li>
+            <li>Participated (and almost reached the final stage) in the NASA International Space Apps Challenge - 
+              Galactic Team (2023)</li>  
+          </ul>
+        </section>
+
+        <section id="year2" class="panel">
+          <h2>Second Year (2024)</h2>
+          <ul>
+            <li>The second year of my geoinformatics degree allowed me to develop stronger geoinformatics skills and gain 
+              more experience in spatial analysis, because the modules were more advanced and taught skills such as 
+              image interpretation, manipulation, and classification. Also learned was, spatial data models and management
+              and photogrammetry.</li>
+            <li>I also learned web development skills (HTML, CSS, JavaScript) and basic app layout design during this year
+              from my organisational and socio-informatics coursework.</li>
+            <li>I did departmental digitising project - ~35 hours of vector digitising in ArcGIS Pro (2024)</li>
+            <li>I and some of my friends presented an abstractat the 15th International Conference on Military Geosciences - 
+              "Bi-temporal Analysis of the Effects of Warfare on Vegetation in Gaza" (June 2024)</li>
+            <li>I also worked as a demi for the first time this year which taught me valuable teaching and communication skills.</li>
+          </ul>
+        </section>
+
+        <section id="year3" class="panel">
+          <h2>Third Year (2025)</h2>
+          <ul>
+            <li>In the last year of my undergraduate studies, I focused on developing advanced skills in spatial analysis 
+              and research methodologies taught to us. Specifically, I learned more advanced spatial analysis techniques 
+              like GEOBIA, Geo-coding, physical data collection and processing, and more.</li>
+            <li>I developed the abstract I presented at the conference into a full research paper with the help of my 
+              supervisor (Dr Munch) and friends that was submitted for publication at the end of the year.</li>
+            <li>I continued with the demi-work, which further enhanced my teaching and communication skills.</li>
+            <li>Completed BSc in Geoinformatics (2023-2025)</li>
+            <li>Achieved distinctions across my degree in: Geographical Information Technology, Scientific Computing, 
+              Statistics & Data Science, Organisational Informatics (Across first, second, and third years)</li>
+          </ul>
+        </section>
+
+        <section id="honours" class="panel">
+          <h2>Honours (2026)</h2>
+          <ul>
+            <li>I started my BSc Hons in Geoinformatics and already learned more about machine learning applications in GIS, 
+              SAR, and proper data management practices and teamwork.</li>
+            <li>I was awarded the CONSAS Award for being the best undergraduate GIS student for the class of 2025.</li>
+            <li>I continued with the demi-work, which further enhanced my teaching and communication skills.</li>
+            <li>My current focus is my honours research topic which I developed by further developing the research I did 
+              for the ICMG24 conference.</li>
+            <li>In the beginning of the year the article was published in a book titled "Student Perspectives in military 
+              geography and geosciences".</li>
+          </ul>
+        </section>
+        
+        <section id="projects" class="panel">
+          <h2>Projects & Work</h2>
+          <p>Examples of work that I did, that demonstrates my technical and academic skills</p>
+          <div class="projects-grid">
+            <article class="project">
+              <h3>NASA Space Apps - Galactic Team</h3>
+              <p class="muted">Team participant and advanced to second round (2023).</p>
+              <p>This was a collaborative project and hackathon experience that taught me how to work effectively in a 
+                team environment. 
+                <a href="nasa-space-apps.png" target="_blank" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold)">View project</a></p>
+            </article>
+
+            <article class="project">
+              <h3>Bi-temporal vegetation analysis abstract (ICMG24)</h3>
+              <p class="muted">Research presented at ICMG24 (June 2024).</p>
+              <p>The abstract presents a summary of the analysis of vegetation changes related to conflict in Gaza using 
+                remote sensing. This research was laterdeveloped into a full publication featured in 
+                "Student Perspectives in Military Geography and Geosciences."
+                <a href="temporal-analysis-abstract.docx" download style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold)">Download abstract</a></p>
+            </article>
+
+            <article class="project">
+              <h3>GEOBIA Rule-set Land Cover Classification</h3>
+              <p class="muted">Third-year project (2025).</p>
+              <p>Development of a rule-based classification approach for automated land cover mapping using object-based 
+                image analysis. This project demonstrated my ability to design geospatial workflows with emphasis on 
+                classification accuracy and methodology.
+                <a href="geobia-classification-report.docx" download style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold)">Download report</a></p>
+            </article>
+
+            <article class="project">
+              <h3>Timeseries Honours Project</h3>
+              <p class="muted">Current honours research (2026).</p>
+              <p>Expanding on temporal vegetation analysis methodologies with advanced time-series processing and machine 
+                learning applications. This project slightlybuilds upon my ICMG24 research and demonstrates my progression to 
+                honours-level research and critical analysis.
+                <a href="timeseries-presentation.pptx" download style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold)">Download presentation</a></p>
+            </article>
+          </div>
+        </section>
+
+        <section id="reflection" class="panel">
+          <h2>Reflection</h2>
+          <p>Before my university career, I had a decent idea of how to study and apply that knowledge in a meaningful way.
+             I also had decent time management, teamwork, and computer science (high school IT) skills. However, I did not
+            know much about GIS and remote sensing, except for the basic definitions taught in geography.</p>
+          <p>Now I can perform most GIS tasks to a good degree, including temporal analysis, GEOBIA workflows, prepare 
+            and orthorectify imagery. I also have a much better understanding of computer science, data management, 
+            statistical analysis, and research methodology.</p>
+          <p>This progression is demonstrated in my ICMG24 presentation, departmental digitising work, CONSAS award,
+            published book chapter contribution, and the completion of my undergraduate degree. Also see the projects section.</p>
+          <p>Going forward, I still need to improve in my programming skills, GEOBIA, ML applications in geomatics, 
+            crtical thinking skills and problem solving abilities, people management, and researching skills and writing 
+            for my future master and phd projects.</p>
+        </section>
+
+        <section id="future" class="panel">
+          <h2>Future Plans (2026 and beyond)</h2>
+          <ul>
+            <p>After honours, I want to do my masters degree and maybe pursue a PhD. After that, I hope to contribute 
+              to the field through research and teaching by hopefully getting a job at stellies.</p>
+            <p>And if that does not work I'll go into industry and apply my skills there and further develop them in the field.</p>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
