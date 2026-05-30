@@ -16,13 +16,8 @@
       </div>
     </header>
 
-    <svg class="background-svg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;">
-      <defs>
-        <pattern id="bgImage" x="0" y="0" width="1400" height="900" patternUnits="userSpaceOnUse">
-          <image href="portfolio-background.png" x="0" y="0" width="1400" height="900"/>
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#bgImage)"/>
+    <svg class="background-svg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden;">
+      <image href="portfolio-background.png" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" style="pointer-events:none"/>
     </svg>
 
     <!-- Dynamic connecting curves -->
